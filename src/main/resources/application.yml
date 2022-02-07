@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: multi-datasource
+
+  datasource:
+    master:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://localhost:3306/test
+      username: root
+      password:
+    slave:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://localhost:3306/test_slave
+      username: root
+      password:
+
+server:
+  port: 8822
+
+
